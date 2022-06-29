@@ -1,0 +1,11 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+}
+.border {
+    border: 1px solid gray;
+}
+.flex-col {
+    margin-bottom: 10px;
+}

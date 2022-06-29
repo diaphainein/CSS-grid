@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Custom CSS Grid</title>
+    <meta name="description" content="A custom CSS grid when you need it!">
+    <meta name="keywords" content="css grid">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="flex-row">
+        <div class="flex-col flex-col-xs-12">
+            <h2>A Custom CSS Grid, When You Need It!</h2>
+        </div>
+    </div>
+    <div class="flex-row">
+        <div class="flex-col flex-col-xs-12 border">
+            <p>
+                This is a standard row. The row has an 80% max-width. Inside is a column with a size of 12.
+            </p>
+        </div>
+    </div>
+    <div class="flex-row flex-row-full">
+        <div class="flex-col flex-col-xs-12 no-padding border">
+            <p>
+                This is a standard row with the modifying class of "flex-row-full". This overrides the default max-width of 80% and increases it to 100%. Inside is a column with a size of 12.
+            </p>
+        </div>
+    </div>
+    <div class="flex-row flex-row-full">
+        <div class="flex-col flex-col-xs-10 border">
+            <p>
+                I have gutters! Inspect this element to see them.
+            </p>
+        </div>
+        <div class="flex-col flex-col-xs-12 no-padding border">
+            <p>
+                I do not have gutters! Add the class of "no-padding" to get rid of gutters.
+            </p>
+        </div>
+    </div>
+    <div class="flex-row flex-row-full">
+        <div class="flex-col flex-col-xs-4 no-padding border">
+            <p>
+                I am a column of size 4.
+            </p>
+        </div>
+        <div class="flex-col no-padding border">
+            <p>
+                I grow to fill the remaining space! Try resizing the window to see how I work. Look for the "expand" keyword in the grid classes to utilize this feature.
+            </p>
+        </div>
+    </div>
+    <div class="flex-row flex-row-full">
+        <div class="flex-col no-padding border">
+            <p>
+                I shrink! Try resizing the window to see how I work. Look for the "shrink" keyword in the grid classes to utilize this feature.
+            </p>
+        </div>
+        <div class="flex-col flex-col-xs-9 no-padding border">
+            <p>
+                I am a column of size 9.
+            </p>
+        </div>
+    </div>
+    <div class="flex-row flex-row-full">
+        <div class="flex-col flex-col-xs-12 flex-col-md-8 flex-col-md-order-2 no-padding border">
+            On screen sizes 992px and up, I'm second in line, but from mobile screens up to 991px, I'm first! Look for "order-2" in the grid classes to utilize this feature.
+        </div>
+        <div class="flex-col flex-col-xs-12 flex-col-md-3 flex-col-md-order-1 no-padding border">
+            On screen sizes 992px and up, I'm first in line, but from mobile screens up to 991px, I'm second! Look for "order-1" in the grid classes to utilize this feature.
+        </div>
+    </div>
+</body>
+
+</html>
